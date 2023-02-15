@@ -7,11 +7,12 @@
     var sum = 0
     var avg = 0
 
-    while (i<s) {
-        sum = sum + a
+    if (i < s) {
+        sum = sum + a[i]
     }
-
-    avg = sum / s
+    else {
+        avg = sum / s
+    }
 
     alert ("среднее арифметическое среди всех элементов массива = " + avg)
 
