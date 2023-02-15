@@ -1,0 +1,52 @@
+<meta charset="utf-8">
+<script>
+	var s = Math.ceil(Math.random()*5+5);
+	var a = [];
+	var i = 0;
+	
+	while (i < s) {
+		a[i] = Math.ceil(Math.random()*10);
+		i = i + 1;
+	}
+
+	var i = 0;
+	var max_i = 0;
+	var max = a[i];
+
+	while (i < s ) {
+
+		if (max < a[i]) {
+			max = a[i];
+			max_i = i;
+		}
+		
+		else {
+			i = i + 1;
+		}
+	}
+
+	var i = 0;
+	var min_i = 0;
+	var min = a[i];
+
+	while (i < s ) {
+
+		if (min > a[i]) {
+			min = a[i];
+			min_i = i;
+		}
+		
+		else {
+			i = i + 1;
+		}
+	}
+
+	alert("Массив = " + a);
+	alert("Максимум = " + max);
+	alert("Индекс максимум = " + max_i);
+
+	alert("Массив = " + a);
+	alert("Минимум = " + min);
+	alert("Индекс минимум = " + min_i);
+
+</script>
